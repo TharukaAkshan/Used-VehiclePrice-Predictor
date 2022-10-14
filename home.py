@@ -39,7 +39,7 @@ conn = pymysql.connect(
 
 @application.route('/')
 def main():
-    return render_template("index.html")
+    return render_template("home.html")
 
 
 @application.route('/selectModelYear', methods=['POST', 'GET'])

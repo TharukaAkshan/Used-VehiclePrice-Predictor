@@ -1,1 +1,1 @@
-web.gunicorn home:application
+web:gunicorn home:application

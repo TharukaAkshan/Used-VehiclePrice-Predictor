@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 pd.set_option('display.width', 300)
 pd.set_option('display.max_columns', 12)
 
-cars = pd.read_csv("D:/5. Other files/Ishan/vehicle_price_predictor-main/Data_set/Filtered_Car_Dataset.csv")
+cars = pd.read_csv("D:/6. Projects/Python Projects/vehicle_price/Data_set/Filtered_Car_Dataset.csv")
 
 make_col_enc = pickle.load(open('Data_Encoding/make_col_enc.pkl', 'rb'))
 cars['make'] = make_col_enc.transform(cars['make'])

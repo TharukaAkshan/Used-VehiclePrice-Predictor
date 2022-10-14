@@ -4,7 +4,7 @@ pd.set_option('display.width',300)
 pd.set_option('display.max_columns',12)
 from sklearn.preprocessing import LabelEncoder
 
-cars_df =  pd.read_csv("D:/5. Other files/Ishan/vehicle_price_predictor-main/Data_set/Filtered_Car_Dataset.csv")
+cars_df =  pd.read_csv("D:/6. Projects/Python Projects/vehicle_price/Data_set/Filtered_Car_Dataset.csv")
 print(cars_df.head(10))
 
 lbl_encoder = LabelEncoder()

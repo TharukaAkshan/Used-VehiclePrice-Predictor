@@ -8,7 +8,7 @@ pd.set_option('display.width',1000)
 pd.set_option('display.max_columns',12)
 
 
-cars = pd.read_csv("D:/5. Other files/Ishan/vehicle_price_predictor-main/Data_set/Filtered_Car_Dataset.csv")
+cars = pd.read_csv("D:/6. Projects/Python Projects/vehicle_price/Data_set/Filtered_Car_Dataset.csv")
 
 print(cars['make'].unique())
 
