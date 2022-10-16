@@ -20,10 +20,10 @@ application = Flask(__name__, template_folder='Template', static_folder='Assets'
 import pymysql
 
 conn = pymysql.connect(
-    host="localhost",
-    user="root",
-    password="",
-    db="fyp_db",
+    host="us-cdbr-east-06.cleardb.net",
+    user="becef50ad9f75a",
+    password="ba3b913a",
+    db="heroku_d93b03711fcae3f",
     cursorclass=pymysql.cursors.DictCursor
 )
 
