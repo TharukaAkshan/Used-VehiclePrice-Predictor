@@ -1,15 +1,13 @@
 
 import json
-
-from flask import Flask, request, session, redirect, url_for, render_template
-# import flaskext.mysql
 import pymysql
 import re
 import mysql.connector
 import pickle
 import pandas as pd
 import numpy as np
-from flask import Flask, request, jsonify, render_template, send_from_directory
+from flask import Flask, request, jsonify,session, redirect, url_for, render_template
+
 
 pd.set_option('display.width',1000)
 pd.set_option('display.max_columns',12)
@@ -17,13 +15,11 @@ pd.set_option('display.max_columns',12)
 #
 application = Flask(__name__, template_folder='Template', static_folder='Assets')
 
-import pymysql
-
 conn = pymysql.connect(
-    host="us-cdbr-east-06.cleardb.net",
-    user="becef50ad9f75a",
-    password="ba3b913a",
-    db="heroku_d93b03711fcae3f",
+    host="localhost",
+    user="root",
+    password="",
+    db="fyp_db",
     cursorclass=pymysql.cursors.DictCursor
 )
 
