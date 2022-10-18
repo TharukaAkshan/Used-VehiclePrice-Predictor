@@ -16,10 +16,10 @@ pd.set_option('display.max_columns',12)
 application = Flask(__name__, template_folder='Template', static_folder='Assets')
 
 conn = pymysql.connect(
-    host="localhost",
-    user="root",
-    password="",
-    db="fyp_db",
+    host="us-cdbr-east-06.cleardb.net",
+    user="b31573ecb6bbf8",
+    password="84609366",
+    db="heroku_f67de275e0378ea",
     cursorclass=pymysql.cursors.DictCursor
 )
 
